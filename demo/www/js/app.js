@@ -104,6 +104,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material', 'io
         }
     })
 
+        .state('app.todolist', {
+            url: '/todolist',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/todolist.html',
+                    controller: 'TodoListCtrl'
+                },
+                'fabContent': {
+                    template: ''
+                }
+            }
+        })
+
     .state('app.profile', {
         url: '/profile',
         views: {
